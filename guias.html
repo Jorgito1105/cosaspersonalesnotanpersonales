@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Hunter World - Guías</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-dragon"></i>
+                </div>
+                <h1>Monster Hunter World</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="monstruos.html" class="nav-link">Monstruos <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="monstruos.html#rathalos"><i class="fas fa-dragon"></i> Rathalos <span class="status status-completed">✓</span></a>
+                            <a href="monstruos.html#diablos"><i class="fas fa-paw"></i> Diablos <span class="status status-incomplete">✖</span></a>
+                            <a href="monstruos.html#nergigante"><i class="fas fa-moon"></i> Nergigante <span class="status status-incomplete">✗</span></a>
+                            <a href="monstruos.html#zinogre"><i class="fas fa-bolt"></i> Zinogre <span class="status status-completed">✔</span></a>
+                            <a href="monstruos.html#bazelgeuse"><i class="fas fa-bomb"></i> Bazelgeuse <span class="status status-incomplete">✘</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="armas.html" class="nav-link">Armas <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="armas.html#espada-escudo"><i class="fas fa-shield-alt"></i> Espada y Escudo <span class="status status-completed">✓</span></a>
+                            <a href="armas.html#gran-espada"><i class="fas fa-sword"></i> Gran Espada <span class="status status-completed">✔</span></a>
+                            <a href="armas.html#arco"><i class="fas fa-bow-arrow"></i> Arco <span class="status status-incomplete">✘</span></a>
+                            <a href="armas.html#ballesta"><i class="fas fa-crosshairs"></i> Ballesta <span class="status status-completed">✔</span></a>
+                            <a href="armas.html#hacha-cargada"><i class="fas fa-hatchet"></i> Hacha Cargada <span class="status status-completed">✓</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="companeros.html" class="nav-link">Compañeros <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="companeros.html#palico"><i class="fas fa-cat"></i> Palico <span class="status status-completed">✓</span></a>
+                            <a href="companeros.html#gritador"><i class="fas fa-drum"></i> Gritador <span class="status status-completed">✔</span></a>
+                            <a href="companeros.html#flashfly"><i class="fas fa-bug"></i> Flashfly <span class="status status-incomplete">✘</span></a>
+                            <a href="companeros.html#vigia"><i class="fas fa-eye"></i> Vigia <span class="status status-completed">✔</span></a>
+                            <a href="companeros.html#traductor"><i class="fas fa-language"></i> Traductor <span class="status status-incomplete">✗</span></a>
+                        </div>
+                    </li>
+                    <li><a href="guias.html" class="nav-link active">Guías</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Guías de Monster Hunter World</h2>
+            <p>Aprende estrategias, consejos y trucos para convertirte en un mejor cazador.</p>
+        </section>
+
+        <section class="page-content">
+            <div class="guide-section">
+                <h3>Guía para Principiantes</h3>
+                <p>Si eres nuevo en Monster Hunter World, esta guía te ayudará a entender los conceptos básicos del juego, desde la caza de tu primer monstruo hasta la elaboración de equipamiento.</p>
+                <a href="#" class="btn">Leer guía</a>
+            </div>
+
+            <div class="guide-section">
+                <h3>Guía de Combate Avanzado</h3>
+                <p>Aprende técnicas avanzadas de combate, cómo esquivar ataques con precisión y maximizar tu daño en cada encuentro con monstruos.</p>
+                <a href="#" class="btn">Leer guía</a>
+            </div>
+
+            <div class="guide-section">
+                <h3>Guía de Elaboración</h3>
+                <p>Domina el sistema de elaboración para crear las armas y armaduras más poderosas del juego utilizando materiales de monstruos.</p>
+                <a href="#" class="btn">Leer guía</a>
+            </div>
+
+            <div class="guide-section">
+                <h3>Guía de Monstruos Élder</h3>
+                <p>Enfrenta a los poderosos monstruos Élder con esta guía que te enseñará sus patrones de ataque y debilidades.</p>
+                <a href="#" class="btn">Leer guía</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Monster Hunter World Wiki. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        const content = this.querySelector('.dropdown-content');
+                        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    if (!e.target.matches('.dropdown, .dropdown *')) {
+                        const dropdownContents = document.querySelectorAll('.dropdown-content');
+                        dropdownContents.forEach(content => {
+                            content.style.display = 'none';
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

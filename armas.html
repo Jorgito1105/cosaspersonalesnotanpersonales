@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Hunter World - Armas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-dragon"></i>
+                </div>
+                <h1>Monster Hunter World</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="monstruos.html" class="nav-link">Monstruos <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="monstruos.html#rathalos"><i class="fas fa-dragon"></i> Rathalos <span class="status status-completed">✓</span></a>
+                            <a href="monstruos.html#diablos"><i class="fas fa-paw"></i> Diablos <span class="status status-incomplete">✖</span></a>
+                            <a href="monstruos.html#nergigante"><i class="fas fa-moon"></i> Nergigante <span class="status status-incomplete">✗</span></a>
+                            <a href="monstruos.html#zinogre"><i class="fas fa-bolt"></i> Zinogre <span class="status status-completed">✔</span></a>
+                            <a href="monstruos.html#bazelgeuse"><i class="fas fa-bomb"></i> Bazelgeuse <span class="status status-incomplete">✘</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="armas.html" class="nav-link active">Armas <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#espada-escudo"><i class="fas fa-shield-alt"></i> Espada y Escudo <span class="status status-completed">✓</span></a>
+                            <a href="#gran-espada"><i class="fas fa-sword"></i> Gran Espada <span class="status status-completed">✔</span></a>
+                            <a href="#arco"><i class="fas fa-bow-arrow"></i> Arco <span class="status status-incomplete">✘</span></a>
+                            <a href="#ballesta"><i class="fas fa-crosshairs"></i> Ballesta <span class="status status-completed">✔</span></a>
+                            <a href="#hacha-cargada"><i class="fas fa-hatchet"></i> Hacha Cargada <span class="status status-completed">✓</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="companeros.html" class="nav-link">Compañeros <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="companeros.html#palico"><i class="fas fa-cat"></i> Palico <span class="status status-completed">✓</span></a>
+                            <a href="companeros.html#gritador"><i class="fas fa-drum"></i> Gritador <span class="status status-completed">✔</span></a>
+                            <a href="companeros.html#flashfly"><i class="fas fa-bug"></i> Flashfly <span class="status status-incomplete">✘</span></a>
+                            <a href="companeros.html#vigia"><i class="fas fa-eye"></i> Vigia <span class="status status-completed">✔</span></a>
+                            <a href="companeros.html#traductor"><i class="fas fa-language"></i> Traductor <span class="status status-incomplete">✗</span></a>
+                        </div>
+                    </li>
+                    <li><a href="guias.html" class="nav-link">Guías</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Armas de Monster Hunter World</h2>
+            <p>Domina los 14 tipos de armas disponibles, cada una con su propio estilo de combate.</p>
+        </section>
+
+        <section class="page-content">
+            <div class="weapon-grid">
+                <div class="weapon-card" id="espada-escudo">
+                    <img src="img\espada_escudo.jpeg" alt="Espada y Escudo">
+                    <div class="weapon-info">
+                        <h3>Espada y Escudo</h3>
+                        <p>Arma versátil que permite atacar mientras se está defendiendo. Perfecta para principiantes y expertos.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="weapon-card" id="gran-espada">
+                    <img src="img\granespada.jpeg" alt="Gran Espada">
+                    <div class="weapon-info">
+                        <h3>Gran Espada</h3>
+                        <p>Un arma enorme que inflige daño masivo con cada golpe. Requiere precisión y timing perfecto.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="weapon-card" id="arco">
+                    <img src="img\arco.jpeg" alt="Arco">
+                    <div class="weapon-info">
+                        <h3>Arco</h3>
+                        <p>Arma de distancia que permite atacar desde lejos con diferentes tipos de flechas y recubrimientos.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="weapon-card" id="ballesta">
+                    <img src="img\ballesta.jpeg" alt="Ballesta">
+                    <div class="weapon-info">
+                        <h3>Ballesta</h3>
+                        <p>Arma pesada de distancia que permite usar diferentes tipos de munición para adaptarse a cualquier situación.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="weapon-card" id="hacha-cargada">
+                    <img src="img\hacha.jpeg" alt="Hacha Cargada">
+                    <div class="weapon-info">
+                        <h3>Hacha Cargada</h3>
+                        <p>Arma que puede transformarse entre modo espada y modo hacha, permitiendo combos versátiles.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Monster Hunter World Wiki. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        const content = this.querySelector('.dropdown-content');
+                        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    if (!e.target.matches('.dropdown, .dropdown *')) {
+                        const dropdownContents = document.querySelectorAll('.dropdown-content');
+                        dropdownContents.forEach(content => {
+                            content.style.display = 'none';
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

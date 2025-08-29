@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Hunter World - Monstruos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-dragon"></i>
+                </div>
+                <h1>Monster Hunter World</h1>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="monstruos.html" class="nav-link active">Monstruos <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#rathalos"><i class="fas fa-dragon"></i> Rathalos <span class="status status-completed">✓</span></a>
+                            <a href="#diablos"><i class="fas fa-paw"></i> Diablos <span class="status status-incomplete">✖</span></a>
+                            <a href="#nergigante"><i class="fas fa-moon"></i> Nergigante <span class="status status-incomplete">✗</span></a>
+                            <a href="#zinogre"><i class="fas fa-bolt"></i> Zinogre <span class="status status-completed">✔</span></a>
+                            <a href="#bazelgeuse"><i class="fas fa-bomb"></i> Bazelgeuse <span class="status status-incomplete">✘</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="armas.html" class="nav-link">Armas <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="armas.html#espada-escudo"><i class="fas fa-shield-alt"></i> Espada y Escudo <span class="status status-completed">✓</span></a>
+                            <a href="armas.html#gran-espada"><i class="fas fa-sword"></i> Gran Espada <span class="status status-completed">✔</span></a>
+                            <a href="armas.html#arco"><i class="fas fa-bow-arrow"></i> Arco <span class="status status-incomplete">✘</span></a>
+                            <a href="armas.html#ballesta"><i class="fas fa-crosshairs"></i> Ballesta <span class="status status-completed">✔</span></a>
+                            <a href="armas.html#hacha-cargada"><i class="fas fa-hatchet"></i> Hacha Cargada <span class="status status-completed">✓</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="companeros.html" class="nav-link">Compañeros <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="companeros.html#palico"><i class="fas fa-cat"></i> Palico <span class="status status-completed">✓</span></a>
+                            <a href="companeros.html#gritador"><i class="fas fa-drum"></i> Gritador <span class="status status-completed">✔</span></a>
+                            <a href="companeros.html#flashfly"><i class="fas fa-bug"></i> Flashfly <span class="status status-incomplete">✘</span></a>
+                            <a href="companeros.html#vigia"><i class="fas fa-eye"></i> Vigia <span class="status status-completed">✔</span></a>
+                            <a href="companeros.html#traductor"><i class="fas fa-language"></i> Traductor <span class="status status-incomplete">✗</span></a>
+                        </div>
+                    </li>
+                    <li><a href="guias.html" class="nav-link">Guías</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h2>Monstruos de Monster Hunter World</h2>
+            <p>Descubre todos los detalles sobre las criaturas que habitan el Nuevo Mundo.</p>
+        </section>
+
+        <section class="page-content">
+            <div class="monster-grid">
+                <div class="monster-card" id="rathalos">
+                    <img src="img\rathalos.jpg" alt="Rathalos">
+                    <div class="monster-info">
+                        <h3>Rathalos</h3>
+                        <p>El Rey de los Cielos. Rathalos es un monstruo volador que domina los cielos con sus ataques de fuego y garras venenosas.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="monster-card" id="diablos">
+                    <img src="img\diablos.png" alt="Diablos">
+                    <div class="monster-info">
+                        <h3>Diablos</h3>
+                        <p>El terror del desierto. Diablos es un monstruo temible que ataca con sus cuernos afilados y se entierra para emboscar a sus presas.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="monster-card" id="nergigante">
+                    <img src="img\nergigante.jpeg" alt="Nergigante">
+                    <div class="monster-info">
+                        <h3>Nergigante</h3>
+                        <p>El Devorador de Élder Dragons. Nergigante es un monstruo extremadamente agresivo que se regenera rápidamente gracias a sus púas.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="monster-card" id="zinogre">
+                    <img src="img\zinogre.jpg" alt="Zinogre">
+                    <div class="monster-info">
+                        <h3>Zinogre</h3>
+                        <p>El lobo eléctrico. Zinogre acumula energía eléctrica para potenciar sus ataques y moverse a velocidades increíbles.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="monster-card" id="bazelgeuse">
+                    <img src="img\bazel.jpeg" alt="Bazelgeuse">
+                    <div class="monster-info">
+                        <h3>Bazelgeuse</h3>
+                        <p>El invasor. Bazelgeuse aparece inesperadamente en las misiones, lanzando escamas explosivas que detonan después de un tiempo.</p>
+                        <a href="#" class="btn">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Monster Hunter World Wiki. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        const content = this.querySelector('.dropdown-content');
+                        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    if (!e.target.matches('.dropdown, .dropdown *')) {
+                        const dropdownContents = document.querySelectorAll('.dropdown-content');
+                        dropdownContents.forEach(content => {
+                            content.style.display = 'none';
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
